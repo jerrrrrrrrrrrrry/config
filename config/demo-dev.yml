@@ -35,6 +35,19 @@ spring:
         initialSize: 5
         minIdle: 5
         maxActive: 20
+        maxWait: 60000
+        timeBetweenEvictionRunsMillis: 30000
+        minEvictableIdleTimeMillis: 60000
+        removeAbandonedTimeout: 180
+        removeAbandoned: true
+        validationQuery: SELECT 1 FROM DUAL
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: true
+        maxPoolPreparedStatementPerConnectionSize: 20
+        useGlobalDataSourceStat: true
+        connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
       secondary:
         enable: true
         #   数据源基本配置
@@ -45,6 +58,22 @@ spring:
         #        type: com.alibaba.druid.pool.xa.DruidXADataSource
         #   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
         filters: stat,wall,slf4j
+        initialSize: 5
+        minIdle: 5
+        maxActive: 20
+        maxWait: 60000
+        timeBetweenEvictionRunsMillis: 30000
+        minEvictableIdleTimeMillis: 60000
+        removeAbandonedTimeout: 180
+        removeAbandoned: true
+        validationQuery: SELECT 1 FROM DUAL
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: true
+        maxPoolPreparedStatementPerConnectionSize: 20
+        useGlobalDataSourceStat: true
+        connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
       thirdary:
         enable: true
         #   数据源基本配置
@@ -55,6 +84,22 @@ spring:
         #        type: com.alibaba.druid.pool.xa.DruidXADataSource
         #   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
         filters: stat,wall,slf4j
+        initialSize: 5
+        minIdle: 5
+        maxActive: 20
+        maxWait: 60000
+        timeBetweenEvictionRunsMillis: 30000
+        minEvictableIdleTimeMillis: 60000
+        removeAbandonedTimeout: 180
+        removeAbandoned: true
+        validationQuery: SELECT 1 FROM DUAL
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: true
+        maxPoolPreparedStatementPerConnectionSize: 20
+        useGlobalDataSourceStat: true
+        connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
       #   Druid数据源配置
       initialSize: 5
       minIdle: 5
