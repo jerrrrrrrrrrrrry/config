@@ -92,8 +92,8 @@ spring:
         minEvictableIdleTimeMillis: 60000
         removeAbandonedTimeout: 180
         removeAbandoned: true
-        validationQuery: SELECT 1 FROM DUAL
-        testWhileIdle: true
+#        validationQuery: SELECT 1 FROM DUAL
+#        testWhileIdle: true
         testOnBorrow: false
         testOnReturn: false
         poolPreparedStatements: true
