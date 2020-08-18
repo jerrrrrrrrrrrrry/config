@@ -90,16 +90,6 @@ spring:
         maxWait: 60000
         timeBetweenEvictionRunsMillis: 30000
         minEvictableIdleTimeMillis: 60000
-        removeAbandonedTimeout: 180
-        removeAbandoned: true
-#        validationQuery: SELECT 1 FROM DUAL
-#        testWhileIdle: true
-        testOnBorrow: false
-        testOnReturn: false
-        poolPreparedStatements: true
-        maxPoolPreparedStatementPerConnectionSize: 20
-        useGlobalDataSourceStat: true
-        connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
       #   Druid数据源配置
       initialSize: 5
       minIdle: 5
