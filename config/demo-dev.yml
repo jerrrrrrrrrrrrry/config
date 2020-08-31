@@ -112,9 +112,9 @@ spring:
         #是否启用 StatViewServlet 默认值 true
         enabled: true
         # 需要拦截的 url
-        urlPattern: /druid/*
+#        urlPattern: /druid/*
         # 允许清空统计数据
-        resetEnable: true
+#        resetEnable: true
         loginUsername: admin
         loginPassword: admin
   thymeleaf:
