@@ -91,6 +91,7 @@ spring:
         timeBetweenEvictionRunsMillis: 30000
         minEvictableIdleTimeMillis: 60000
       #   Druid数据源配置
+      filters: stat,wall,slf4j
       initialSize: 5
       minIdle: 5
       maxActive: 20
