@@ -1,6 +1,6 @@
 spring:
   redis:
-    database: 15
+    database: 10
     host: 127.0.0.1
     port: 6379
     jedis:
@@ -90,6 +90,7 @@ spring:
         maxWait: 60000
         timeBetweenEvictionRunsMillis: 30000
         minEvictableIdleTimeMillis: 60000
+        poolPreparedStatements: true
       #   Druid数据源配置
       filters: stat,wall
       initialSize: 5
